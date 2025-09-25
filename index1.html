@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Floresteria - The Flower Shop</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href='https://fonts.googleapis.com/css2?family=Agbalumo&family=Aguafina+Script&family=Cinzel+Decorative&family=Inter:wght@400;500;600&display=swap' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+</head>
+<body>
+    <header id="header">
+        <h1 id="main-heading" style="font-size: 100px; color: rgb(255, 241, 243);">Mi Floresteria</h1>
+    </header>
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span class="marquee-item">
+                <a href="https://www.instagram.com/mi_floresteria" target="_blank" class="marquee-link">Follow us on Instagram</a> 🌸 
+                | 
+                <a href="mailto:info@mifloresteria.com" class="marquee-link">If you have any query reach out to us here</a> 💌 
+                | 
+                <a href="https://twitter.com/mi_floresteria" target="_blank" class="marquee-link">Follow us on X (Twitter)</a> ✨
+            </span>
+            <span class="marquee-item">
+                <a href="https://www.instagram.com/mi_floresteria" target="_blank" class="marquee-link">Follow us on Instagram</a> 🌸 
+                | 
+                <a href="mailto:info@mifloresteria.com" class="marquee-link">If you have any query reach out to us here</a> 💌 
+                | 
+                <a href="https://twitter.com/mi_floresteria" target="_blank" class="marquee-link">Follow us on X (Twitter)</a> ✨
+            </span>
+        </div>
+    </div>
+    
+    <h2 id="first-heading">A Warm Welcome, Dear Customer!</h2>
+    <h3 id="second-heading">Choose which section you want to explore today:</h3>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bouquets">Bouquets</a></li>
+            <li><a href="#sticks">Sticks</a></li>
+            <li><a href="#braids">Braids</a></li>
+            <li><a href="#vase">Vase Arrangements</a></li>
+            <li><a href="#basket">Baskets</a></li>
+            <li><a href="#garlands">Garlands</a></li>
+            <li><a href="#potted">Potted Plants</a></li>
+            <li><a href="#head-crowns">Crowns</a></li>
+            <li><a href="#about-us">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="section">
+            <h2>Our Floral Arrangements</h2>
+            <div id="flower-arrangement-options" style="font-size: 18px;">
+                <h3>Choose an arrangement type:</h3>
+                <a href="#bouquets">Bouquets</a>
+                <a href="#sticks">Sticks</a>
+                <a href="#braids">Braids</a>
+                <a href="#vase">Vase Arrangements</a>
+                <a href="#basket">Baskets</a>
+                <a href="#garlands">Garlands</a>
+                <a href="#potted">Potted Plants</a>
+                <a href="#head-crowns">Children's / Decorative Crowns</a>
+                <a href="#bridal-crowns">Bridal Crowns</a>
+                <a href="#cultural-religious-crowns">Cultural/Religious Crowns</a>
+            </div>
+            <div id="shop-now">
+                <p style="font-size: 18px;">Browse our products and choose your favorites!</p>
+            </div>
+        </section>
+        
+        <section id="bouquets" class="section">
+            <h2>Bouquets</h2>
+            <div class="product-grid" data-arrangement="bouquets">
+                <div class="product-card">
+                    <img src="images/red-rose-bouqet.jpg" alt="Red Roses Bouquet">
+                    <h3>Red Roses Bouquet</h3>
+                    <p>A timeless bouquet of vibrant red roses.</p>
+                    <div class="price">$28.00</div>
+                    <button class="btn add-to-cart" data-product-id="red_roses">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/pink-roses.jpeg" alt="Pink Roses Bouquet">
+                    <h3>Pink Roses Bouquet</h3>
+                    <p>A romantic and happy bouquet of pink roses.</p>
+                    <div class="price">$32.00</div>
+                    <button class="btn add-to-cart" data-product-id="yellow_tulips">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/mixed-carn.jpeg" alt="Mixed Carnations Bouquet">
+                    <h3>Mixed Carnations Bouquet</h3>
+                    <p>A vibrant mix of different colored carnations.</p>
+                    <div class="price">$25.00</div>
+                    <button class="btn add-to-cart" data-product-id="mixed_carnations">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/white-lilies.png" alt="Elegant White Lilies">
+                    <h3>White Lilies Bouquet</h3>
+                    <p>A sophisticated bouquet of pure white lilies.</p>
+                    <div class="price">$35.00</div>
+                    <button class="btn add-to-cart" data-product-id="white_lilies">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/pink-gerbera.jpg" alt="Pink Gerberas Bouquet">
+                    <h3>Pink Gerberas Bouquet</h3>
+                    <p>A charming bouquet of bright pink gerbera daisies.</p>
+                    <div class="price">$30.00</div>
+                    <button class="btn add-to-cart" data-product-id="pink_gerberas">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/rose-lily.jpg" alt="Rose and Lily Mixed Bouquet">
+                    <h3>Rose and Lily Mix Bouquet</h3>
+                    <p>A beautiful combination of roses and lilies.</p>
+                    <div class="price">$40.00</div>
+                    <button class="btn add-to-cart" data-product-id="rose_and_lily_mix">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/purple-orchid.png" alt="Purple Orchid Bouquet">
+                    <h3>Purple Orchid Bouquet</h3>
+                    <p>A luxurious bouquet of stunning purple orchids.</p>
+                    <div class="price">$50.00</div>
+                    <button class="btn add-to-cart" data-product-id="purple_orchids">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/sunflowerB.png" alt="Bright Sunflowers">
+                    <h3>Sunflower Bouquet</h3>
+                    <p>A cheerful bouquet of large, bright sunflowers.</p>
+                    <div class="price">$22.00</div>
+                    <button class="btn add-to-cart" data-product-id="sunflower_bouquet">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sticks" class="section">
+            <h2>Sticks</h2>
+            <div class="product-grid" data-arrangement="sticks">
+                <div class="product-card">
+                    <img src="images/single-rose.jpg" alt="Single Red Rose Stem">
+                    <h3>Single Red Rose</h3>
+                    <p>A classic and elegant single red rose stem.</p>
+                    <div class="price">$5.00</div>
+                    <button class="btn add-to-cart" data-product-id="single_red_rose">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/chrysan.jpg" alt="Bundle of Bamboo Sticks">
+                    <h3>Chrysanthemum Stem</h3>
+                    <p>A beautiful chrysanthemum stem.</p>
+                    <div class="price">$10.00</div>
+                    <button class="btn add-to-cart" data-product-id="bamboo_sticks">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/white-lily.jpg" alt="Single White Lily Stem">
+                    <h3>Single White Lily</h3>
+                    <p>A pure and graceful single white lily stem.</p>
+                    <div class="price">$7.00</div>
+                    <button class="btn add-to-cart" data-product-id="single_white_lily">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/lotus.jpg" alt="Set of Decorative Twigs">
+                    <h3>Single Lotus</h3>
+                    <p>An elegant Lotus.</p>
+                    <div class="price">$12.00</div>
+                    <button class="btn add-to-cart" data-product-id="decorative_twigs">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="braids" class="section">
+            <h2>Braids</h2>
+            <div class="product-grid" data-arrangement="braids">
+                <div class="product-card">
+                    <!-- <img src="jasmine-braid.jpg" alt="Jasmine Flower Braid (Veni)"> -->
+                    <h3>Jasmine Braid</h3>
+                    <p>A traditional and fragrant braid of jasmine flowers.</p>
+                    <div class="price">$15.00</div>
+                    <button class="btn add-to-cart" data-product-id="jasmine_braid">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/rose_and_carnation_braid.jpg" alt="Rose and Carnation Braid"> -->
+                    <h3>Rose and Carnation Braid</h3>
+                    <p>A colorful braid of small roses and carnations.</p>
+                    <div class="price">$18.00</div>
+                    <button class="btn add-to-cart" data-product-id="rose_and_carnation_braid">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="vase" class="section">
+            <h2>Vase Arrangements</h2>
+            <div class="product-grid" data-arrangement="vase">
+                <div class="product-card">
+                    <!-- <img src="images/roses_in_glass_vase.jpg" alt="Roses in a Glass Vase"> -->
+                    <h3>Roses in Glass Vase</h3>
+                    <p>A classic arrangement of red roses in a stylish glass vase.</p>
+                    <div class="price">$45.00</div>
+                    <button class="btn add-to-cart" data-product-id="roses_in_glass_vase">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/mixed_flowers_ceramic_vase.jpg" alt="Mixed Flowers in Ceramic Vase"> -->
+                    <h3>Mixed Flowers in Ceramic Vase</h3>
+                    <p>A beautiful mix of seasonal flowers in a ceramic vase.</p>
+                    <div class="price">$55.00</div>
+                    <button class="btn add-to-cart" data-product-id="mixed_flowers_ceramic_vase">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="basket" class="section">
+            <h2>Baskets</h2>
+            <div class="product-grid" data-arrangement="basket">
+                <div class="product-card">
+                    <!-- <img src="images/rose_basket_arrangement.jpg" alt="Rose Basket Arrangement"> -->
+                    <h3>Rose Basket</h3>
+                    <p>A delightful basket filled with beautiful roses.</p>
+                    <div class="price">$40.00</div>
+                    <button class="btn add-to-cart" data-product-id="rose_basket_arrangement">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/mixed_flower_basket.jpg" alt="Mixed Flower Basket Arrangement"> -->
+                    <h3>Mixed Flower Basket</h3>
+                    <p>A lovely basket with a variety of colorful blooms.</p>
+                    <div class="price">$48.00</div>
+                    <button class="btn add-to-cart" data-product-id="mixed_flower_basket">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="garlands" class="section">
+            <h2>Garlands</h2>
+            <div class="product-grid" data-arrangement="garlands">
+                <div class="product-card">
+                    <img src="images/marigold.jpg" alt="Traditional Marigold Garland">
+                    <h3>Marigold Garland</h3>
+                    <p>A vibrant and auspicious marigold garland.</p>
+                    <div class="price">$12.00</div>
+                    <button class="btn add-to-cart" data-product-id="marigold_garland">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/rose-garlands.png" alt="Elegant Rose Garland">
+                    <h3>Rose Garland</h3>
+                    <p>A fragrant and beautiful garland made of rose petals.</p>
+                    <div class="price">$20.00</div>
+                    <button class="btn add-to-cart" data-product-id="rose_petal_garland">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="potted" class="section">
+            <h2>Potted Plants</h2>
+            <div class="product-grid" data-arrangement="potted">
+                <div class="product-card">
+                    <!-- <img src="potted-lily.jpg" alt="Potted Peace Lily"> -->
+                    <h3>Peace Lily Plant</h3>
+                    <p>A beautiful and air-purifying peace lily in a pot.</p>
+                    <div class="price">$30.00</div>
+                    <button class="btn add-to-cart" data-product-id="potted_peace_lily">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/potted_orchid.jpg" alt="Potted Orchid Plant"> -->
+                    <h3>Orchid Plant</h3>
+                    <p>A sophisticated orchid plant in a stylish pot.</p>
+                    <div class="price">$45.00</div>
+                    <button class="btn add-to-cart" data-product-id="potted_orchid">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="head-crowns" class="section">
+            <h2>Children’s / Decorative Crowns</h2>
+            <div class="product-grid" data-arrangement="head-crowns">
+                <div class="product-card">
+                    <!-- <img src="images/tagar_crown.jpg" alt="Tagar (Crape Jasmine) Head Crown"> -->
+                    <h3>Tagar (Crape Jasmine)</h3>
+                    <p>Delicate white flowers; used for subtle elegance in floral jewelry.</p>
+                    <div class="price">$20.00</div>
+                    <button class="btn add-to-cart" data-product-id="tagar_crown">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/babys_breath_head_crown.jpg" alt="Baby’s Breath (Gypsophila) Head Crown"> -->
+                    <h3>Baby’s Breath (Gypsophila)</h3>
+                    <p>Extremely popular for modern flower crowns. Often paired with roses.</p>
+                    <div class="price">$25.00</div>
+                    <button class="btn add-to-cart" data-product-id="babys_breath_head_crown">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/orchids_head_crown.jpg" alt="Orchids (Miniature or Dendrobium) Head Crown"> -->
+                    <h3>Orchids (Miniature or Dendrobium)</h3>
+                    <p>Exotic and vibrant. Common in bridal crowns or fashion.</p>
+                    <div class="price">$35.00</div>
+                    <button class="btn add-to-cart" data-product-id="orchids_head_crown">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/mini_gerberas_head_crown.jpg" alt="Mini Gerberas Head Crown"> -->
+                    <h3>Mini Gerberas</h3>
+                    <p>If kept fresh, they can work for bold, colorful crowns.</p>
+                    <div class="price">$22.00</div>
+                    <button class="btn add-to-cart" data-product-id="mini_gerberas_head_crown">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/carnations_head_crown.jpg" alt="Carnations (Spray or Mini) Head Crown"> -->
+                    <h3>Carnations (Spray or Mini)</h3>
+                    <p>Ruffled and long-lasting. Available in varied colors.</p>
+                    <div class="price">$18.00</div>
+                    <button class="btn add-to-cart" data-product-id="carnations_head_crown">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/daisies_head_crown.jpg" alt="Daisies Head Crown"> -->
+                    <h3>Daisies</h3>
+                    <p>Lightweight and whimsical. Often seen in Western-style floral headbands.</p>
+                    <div class="price">$15.00</div>
+                    <button class="btn add-to-cart" data-product-id="daisies_head_crown">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="bridal-crowns" class="section">
+            <h2>Bridal Crowns</h2>
+            <div class="product-grid" data-arrangement="bridal-crowns">
+                <div class="product-card">
+                    <!-- <img src="images/white_rose_bridal_crown.jpg" alt="Elegant White Rose Bridal Crown"> -->
+                    <h3>White Rose Bridal Crown</h3>
+                    <p>An elegant bridal crown made with pristine white roses.</p>
+                    <div class="price">$65.00</div>
+                    <button class="btn add-to-cart" data-product-id="white_rose_bridal_crown">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/babys_breath_bridal_crown.jpg" alt="Delicate Baby's Breath Bridal Crown"> -->
+                    <h3>Baby's Breath (Gypsophila)</h3>
+                    <p>Extremely popular for modern flower crowns. Often paired with roses.</p>
+                    <div class="price">$75.00</div>
+                    <button class="btn add-to-cart" data-product-id="babys_breath_bridal_crown">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cultural-religious-crowns" class="section">
+            <h2>Cultural / Religious Crowns</h2>
+            <div class="product-grid" data-arrangement="cultural-religious-crowns">
+                <div class="product-card">
+                    <!-- <img src="images/indian_floral_garland.jpg" alt="Traditional Indian Floral Garland"> -->
+                    <h3>Traditional Indian Garland</h3>
+                    <p>A vibrant garland used in Indian ceremonies and celebrations.</p>
+                    <div class="price">$25.00</div>
+                    <button class="btn add-to-cart" data-product-id="indian_floral_garland">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <!-- <img src="images/hawaiian_lei.jpg" alt="Hawaiian Lei"> -->
+                    <h3>Hawaiian Lei</h3>
+                    <p>A beautiful lei of fresh flowers, symbolizing love and greeting.</p>
+                    <div class="price">$30.00</div>
+                    <button class="btn add-to-cart" data-product-id="hawaiian_lei">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="thank-you" class="section">
+            <h2 style="text-align: center; background-color: burlywood; color: teal;">Thank you for visiting Mi Floresteria!</h2>
+        </section>
+
+        <section id="about-us" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to Mi Floresteria! We are a family-owned flower shop dedicated to bringing the beauty of nature to your life. From elegant bouquets to handcrafted garlands and crowns, we take pride in creating fresh, beautiful, and meaningful floral arrangements for all occasions. Our passion for flowers is reflected in every product we create. We hope you find the perfect flowers to celebrate life's special moments.</p>
+        </section>
+        <section id="contact-us" class="section">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please reach out with any questions or custom order requests.</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> info@mifloresteria.com</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/mi_floresteria" target="_blank">Instagram</a> | 
+                    <a href="https://www.facebook.com/mi_floresteria" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Mi Floresteria | All rights reserved.</p>
+    </footer>
+    
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const productName = button.closest('.product-card').querySelector('h3').textContent;
+                    alert(`Added "${productName}" to your cart!`);
+                });
+            });
+        });
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
